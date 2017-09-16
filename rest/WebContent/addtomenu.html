@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name ="f1" action="Additem.jsp" method="POST">
+<h2>Welcome Manager</h2>
+<h3> Modify menu</h3>
+<h3 style="text-align: right"><a href="login.html" >Logout</a></h3>
+<table>
+<tr>
+<td>Item Type</td>
+<td><select name="Type">
+<option value ="-1">--Select type of item--</option>
+<option value ="Starters">Starters</option>
+<option value ="Main Course">Main Course</option>
+<option value ="Bevarages">Beverages</option>
+<option value ="Desserts">Desserts</option>
+</select>
+<tr>
+<td>Item id </td>
+<td><input type="text" name ="txtid" value ="enter item id"/></td>
+</tr>
+<tr>
+<td>Item name </td>
+<td><input type="text" name ="txtname" value ="enter item name"/></td>
+</tr>
+<tr>
+<td>Item price </td>
+<td><input type="text" name ="txtprice" value ="enter item price"/></td>
+</tr>
+<tr>
+<td><input type="Submit" value="Add Item"/></td>
+<td><input type="Reset" value="Reset"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

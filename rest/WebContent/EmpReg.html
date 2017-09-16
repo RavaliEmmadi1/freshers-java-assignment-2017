@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Registration</title>
+<script type="text/javascript">
+function  validations()
+{
+if(f1.txtEno.value=="")
+{
+alert("Enter emp no");
+f1.txtEno.focus();
+return false;
+}
+else if(f1.txtEname.value=="")
+{
+alert("Enter emp name");
+f1.txtEname.focus();
+return false;
+}
+else if(f1.empjob.value=="-1")
+{
+alert("Select Proper Job");
+f1.empjob.focus();
+return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+</head>
+<body>
+<form  name="f1"  action="EmpReg.jsp"  method="POST" onsubmit="return validations()">
+<table>
+<tr>
+<td>Employee No</td>
+<td><input type="text" name="txtEno" /></td>
+</tr>
+<tr>
+<td>Employee Name</td>
+<td><input type="text" name="txtEname" /></td>
+</tr>
+
+<tr>
+<td>Employee Job</td>
+<td>
+<select  name="empjob">
+<option value="-1">--Select Job--</option>
+<option value="Bus boys">Bus boys</option>
+<option value="Servers">Servers</option>
+<option value="Chief cook">Chief cook</option>
+<option value="Line cook">Line cook</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td> Salary</td>
+<td><input type="text" name="txtSal" /></td>
+</tr>
+<tr>
+<td><input type="submit" value="Add Emp" /></td>
+<td><input type="reset" value="Reset" /></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
